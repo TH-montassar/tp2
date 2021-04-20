@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  
+  <style>
+    form{
+   box-shadow: 12px 12px 12px  gray;
+   border-radius:30px;
+   background: rgb(255, 255, 255);
+   margin-right:20%;
+    }
+    body{
+      background:rgb(214, 213, 213)}
+      .btn1{
+      border:none;
+      outline: none;
+      height: 50px;
+      width: 25%;
+      background-color:black;
+      color: white;
+      border-radius: 4px;
+      font-weight:bold;}
+      td{
+      font-style: initial;
+    }
+    
+  </style>
+  <title>niveau</title>
+</head>
+<body>
+<div class="jumbotron text-center">
+    <h1>formulaire niveau</h1>
+    
+  </div>
+  <section class="form my-4 mx-5">
+        <div class="container">
+          <div class="row no-gutters">
+  
+  <form  action="niveau.jsp" method="post">
+   <div class="col-lg-7 px-5 pt-5">
+  
+    <table>
+      <tr>
+        <td>votre nom<input type="text" name="name" id="" required></td>
+      </tr>
+      <tr>
+        <td>Quelles sont vos connaissances de HTMl ?</td>
+  
+        <td> <input type="radio" name="r" id="" value="1" required>faibles</td>
+  
+        <td><input type="radio" name="r" id="" value="2" required>moyennes</td>
+        <td><input type="radio" name="r" id="" value="3" required >bonnes</td>
+      </tr>
+      <tr>
+        <td>indiquez votre expertise en programmation ?</td>
+  
+        <td> <input type="radio" name="ra" id="" value="1" required >absente</td>
+  
+        <td><input type="radio" name="ra" id="" value="2" required >moyenne</td>
+        <td><input type="radio" name="ra" id="" value="3" required>bonne</td>
+      </tr>
+  
+    </table>
+    </div>
+    
+    <div class="from-row">
+                        <div class="col-lg-7">
+                            <button type="submit" class="btn1 mt-3 mb-5 btn btn-outline-success" >voir le resultat</button>
+
+                        </div>
+                        </div>
+  
+  
+  </form>
+  </div>
+  </div>
+  </div>
+  </body>
+</html>

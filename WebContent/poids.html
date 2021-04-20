@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.css" rel="stylesheet">
+  <title>exercice 5</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing:border-box;
+      font-family: 'Poppins',sans-serif;
+    }
+    body
+    {
+      display:flex;
+      height: 100vh;
+      justify-content:center;
+      align-items: center;
+      padding: 10px;
+      background: linear-gradient(135deg,#0542C5,#6D2B8A);
+    }
+    .container
+    {
+      max-width: 700px;
+      width: 100%;
+      background:#fff;
+      padding:20px 30px ;
+      border-radius: 10px;
+  
+    }
+    .container .title{
+     font-size: 20px;
+     font-weight: 500;
+     position: relative;
+    text-align: center;
+  
+    }
+    .container .title:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 100%;
+      background: linear-gradient(135deg,#0542C5,#6D2B8A);
+      }
+  
+    .container form .user-details{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content: space-between;
+      margin: 20px 0 12px 0 ;
+      
+    }
+    form .user-details .input-box{
+      margin-bottom: 15px;
+      
+      
+      
+    }
+    .user-details .input-box .details{
+      
+      
+      font-weight: 500;
+      margin-bottom: 5px;
+  
+    }
+    .user-details .input-box input{
+      height: 40px;
+      width: 50%;
+      outline: none;
+      border-radius: 5px;
+      border:1px solid #ccc;
+      padding-left: 15px;
+      font-size: 16px;
+      border-bottom-width:3px ;
+      transition:all 0.3s ease;
+  
+  
+    }
+    .user-details .input-box input:focus,
+    .user-details .input-box input:valid{
+      border-color: #6D2B8A;
+      border-bottom-width:3px ;
+  
+  
+  
+    }
+   form .gender-details .gender-title{
+     font-size: 20px;
+     font-weight: 500;
+  
+   }
+ 
+
+  </style>
+  
+</head>
+
+
+<body>
+  <div class="container">
+    <div class="title"> calcule Poids idéal</div>
+    <form action="poids.jsp" method="post">
+      <div class="user-details">
+      <table>
+      <tr><td>
+      <div class="input-box">
+          <span class="details">votre nom</span>
+          <input type="text" name="name" placeholder="votre nom" required>
+        </div>
+      </td></tr>
+      <tr><td>
+        <div class="input-box">
+          <span class="details">votre taille(en m)</span>
+          <input type="number" name="taille" placeholder="taille en metre" required>
+        </div>
+        </td></tr>
+    <table>
+    
+    
+        
+    
+      </div>
+      <div class="gender-details">
+        
+        <table>
+          <tr>
+            <td><span class="gender-title">vous etre ?</span> </td>
+            <div class="category">
+            <td> <input type="radio" name="g" value="homme" required> homme</td>
+          
+            <td> <input type="radio" name="g" value="femme" required>femme</td>
+          </div>
+          </tr>
+  
+        </table>
+      </div>
+
+      <button type="submit" class="btn btn-outline-success">voir le resultat</button>
+      
+    
+    </form>
+
+  </div>
+
+</body>
+</html>
